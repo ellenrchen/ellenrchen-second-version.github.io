@@ -1,6 +1,6 @@
 body {
-  margin: 0;
-  text-align: center;
+  margin-left: 1%;
+  text-align: left;
   font-family: "Open Sans", sans-serif;
   background-color: #fafafa;
 }
@@ -20,7 +20,13 @@ p{
     text-align: left;
     width: 75%;
 }
+.copyright {
+    font-size: 0.8rem;
+    margin: 2% auto auto auto;
+    text-align: center;
+  }
 
+/* Intro page */
 .intro-container {
   margin-top: 5%;
   position: relative;
@@ -29,7 +35,7 @@ p{
 .intro-img {
   max-width: 50%;
   max-height: 80vh;
-  margin-left: -25%;
+  margin-left: max(20%, 50px);
 }
 .intro-name {
   position: absolute;
@@ -40,11 +46,6 @@ p{
     position: absolute;
     bottom: 50%;
     right: max(25%, 20px);
-}
-.copyright {
-  font-size: 0.8rem;
-  margin: 3% auto auto auto;
-  text-align: center;
 }
 
 /* About Page */
