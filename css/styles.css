@@ -22,34 +22,48 @@ p{
 }
 .copyright {
     font-size: 0.8rem;
-    margin: 2% auto auto auto;
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
     text-align: center;
   }
 
 /* Intro page */
 .intro-container {
-  margin-top: 5%;
+  margin-top: 3%;
   position: relative;
+  min-height: 575px;
 }
 
 .intro-img {
+  position: absolute;
   max-width: 50%;
   max-height: 80vh;
   margin-left: max(20%, 50px);
 }
+.header{
+  position: relative; 
+  left: 55%; 
+  padding-top: 5%;
+}
 .intro-name {
-  position: absolute;
+  position: relative;
   top: 5%;
-  right: max(15%, 15px);
+  right: 5%;
 }
 .intro-about{
-    position: absolute;
-    bottom: 50%;
-    right: max(25%, 20px);
+    position: relative;
+    margin-top: 5%;
+    left: 5%;
+    /* bottom: 50%;
+    right: max(25%, 20px); */
 }
 .links{
+  position: absolute;
   display: flex;
   flex-direction: column;
+  bottom: 15%;
+  /* margin-top: 20%; */
 }
 
 /* About Page */
@@ -74,4 +88,25 @@ p{
 
 .about-text{
     margin-left: 5%;
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    left: 60%;
+  }
+  .intro-about{
+    left: -2%
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro-img{
+    left: -10%;
+  }
+  .header {
+    left: 60%;
+  }
+  .intro-about{
+    left: -2%
+  }
 }
