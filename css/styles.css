@@ -47,6 +47,10 @@ p{
     bottom: 50%;
     right: max(25%, 20px);
 }
+.links{
+  display: flex;
+  flex-direction: column;
+}
 
 /* About Page */
 .about-header{
